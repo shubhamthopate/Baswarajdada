@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>CIC_EP.Application</AssemblyName>
+    <PackageId>CIC_EP.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>CIC_EP</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="5.10.1" />
+    <PackageReference Include="NPOI" Version="2.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIC_EP.Application.Shared\CIC_EP.Application.Shared.csproj" />
+    <ProjectReference Include="..\CIC_EP.Core\CIC_EP.Core.csproj" />
+    <ProjectReference Include="..\CIC_EP.EntityFrameworkCore\CIC_EP.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
